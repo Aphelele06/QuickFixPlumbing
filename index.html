@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>QuickFix Plumbing - Home</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="QuickFix Plumbing — reliable local plumbing services in Melbourne. Emergency repairs, installations and maintenance." />
+  <meta name="keywords" content="plumbing, plumber, emergency plumbing, Melbourne, water heater, pipe repair" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="brand">
+      <picture>
+        <source srcset="images/Logo.png" media="(max-width:600px)">
+        <img src="images/Logo.png" alt="QuickFix Plumbing logo" class="logo-img responsive-img">
+      </picture>
+      <div>
+        <h1 id="org_name">QuickFix Plumbing</h1>
+        <p id="slogan">Your Trusted Local Plumber in Melbourne</p>
+      </div>
+    </div>
+
+    <button id="navToggle" class="nav-toggle" aria-controls="mainNav" aria-expanded="false">Menu</button>
+
+    <nav id="mainNav" class="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <picture>
+        <!-- using the existing file in your zip (has a space) -->
+        <source srcset="images/full width.jpg" media="(max-width:1024px)">
+        <img src="images/full width.jpg" alt="Plumber repairing a pipe" class="responsive-img">
+      </picture>
+
+      <div class="hero-text">
+        <h2>Your Trusted Plumbing Experts</h2>
+        <p>Fast, reliable plumbing solutions for homes and businesses across Melbourne.</p>
+      </div>
+    </section>
+
+    <section class="home-grid" aria-label="Service highlights">
+      <h2>Featured Services</h2>
+      <div class="grid" id="featuredServices">
+        <!-- dynamically populated by js/script.js -->
+      </div>
+
+      <div class="call-to-action">
+        <a href="services.html" class="btn">View All Services</a>
+        <a href="contact.html" class="btn btn-secondary">Get A Quote</a>
+      </div>
+    </section>
+
+    <section class="gallery-preview" aria-label="Gallery preview">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <!-- using the available desktop image as gallery images (keeps working with your zip) -->
+        <a href="images/desktop.png" data-lightbox="gallery" data-title="QuickFix work 1">
+          <img src="images/desktop.png" alt="QuickFix example 1" class="responsive-img">
+        </a>
+        <a href="images/desktop.png" data-lightbox="gallery" data-title="QuickFix work 2">
+          <img src="images/desktop.png" alt="QuickFix example 2" class="responsive-img">
+        </a>
+        <a href="images/desktop.png" data-lightbox="gallery" data-title="QuickFix work 3">
+          <img src="images/desktop.png" alt="QuickFix example 3" class="responsive-img">
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 QuickFix Plumbing. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="https://github.com/aizosa908-code/wede" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </footer>
+
+  <!-- Unified JS (navigation, services+search, lightbox, form validation) -->
+  <script src="js/script.js"></script>
+</body>
+</html>

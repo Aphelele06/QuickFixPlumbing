@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Contact - QuickFix Plumbing</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Contact QuickFix Plumbing for enquiries and emergency assistance in Melbourne." />
+  <meta name="keywords" content="contact quickfix plumbing, plumber melbourne, contact" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <picture>
+        <source srcset="images/Logo.png" media="(max-width:600px)">
+        <img src="images/Logo.png" alt="QuickFix Plumbing logo" class="logo-img responsive-img">
+      </picture>
+      <div>
+        <h1 id="org_name">QuickFix Plumbing</h1>
+        <p id="slogan">Your Trusted Local Plumber in Melbourne</p>
+      </div>
+    </div>
+
+    <button id="navToggle" class="nav-toggle" aria-controls="mainNav" aria-expanded="false">Menu</button>
+
+    <nav id="mainNav" class="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="contact-section">
+      <h2>Contact QuickFix Plumbing</h2>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p><strong>Phone:</strong> <a href="tel:+61399998888">03 9999 8888</a></p>
+          <p><strong>Email:</strong> <a href="mailto:info@quickfixplumbing.com.au">info@quickfixplumbing.com.au</a></p>
+          <p><strong>Service Area:</strong> Melbourne, VIC</p>
+
+          <h3>Our Location</h3>
+
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31594.058203061515!2d144.946457!3d-37.815018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5779a2d2f9e1d!2sMelbourne%20VIC!5e0!3m2!1sen!2sau!4v1700000000000"
+              loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+
+          <div class="map-actions">
+            <a href="https://maps.google.com/?q=Melbourne+VIC" target="_blank" rel="noopener" class="btn">Get directions</a>
+          </div>
+        </div>
+
+        <div>
+          <h3>Send Us a Message</h3>
+
+          <div id="formErrors" class="form-errors" aria-live="polite"></div>
+
+          <form id="contactForm" novalidate>
+            <label for="name">Full name *</label>
+            <input id="name" name="name" type="text" required minlength="2">
+
+            <label for="email">Email address *</label>
+            <input id="email" name="email" type="email" required>
+
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" type="tel" pattern="[0-9+()\- \s]{7,20}" placeholder="Optional">
+
+            <label for="subject">Subject *</label>
+            <input id="subject" name="subject" type="text" required>
+
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <div class="form-actions">
+              <button type="submit">Send</button>
+              <button type="reset">Reset</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 QuickFix Plumbing. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
